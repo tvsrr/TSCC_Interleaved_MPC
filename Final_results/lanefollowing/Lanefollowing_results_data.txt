@@ -1,0 +1,25 @@
+%Lanefollowing results data
+
+No. of steps run at a time = 15 
+no. of obstacles = 5
+road width = 6m
+car width = 1m
+time taken by tscc coupled mpc = 
+tscc horizon = 0.2
+distance travelled = 90m
+scale values = 
+average percentage scaled = 0.91
+w_deviations = 
+
+%Lanefollowing results data
+
+No. of steps run at a time = 15 
+no. of obstacles = 1
+road width = 4m
+car width = 1m
+time taken by tscc coupled mpc = 
+tscc horizon = 0.2
+distance travelled = 90m
+scale values = 
+average percentage scaled = 0.91
+w_deviations = 

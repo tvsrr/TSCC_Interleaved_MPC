@@ -1,0 +1,45 @@
+%%% commented
+
+\begin{comment}
+\subsubsection{Lane following}
+Figures (\ref{LFa}) and (\ref{LFb}) show lane following simulation. The first layer planning here is set to 50m. The speed of the participant on the same lane of the ego vehicle is set to 5m/s and for the other participant it is set to 7m/s. The initial velocity of the ego vehicle is significantly more which is around 10m/s. Also the $v^{pref}$ is set to 10m/s to make the ego vehicles following same velocity profile. But the ego-vehicle slows down and maintain the speed of the vehicles in front of it which is 5m/s.
+
+\begin{figure}[H]
+        \begin{subfigure}[b]{0.2\textwidth}
+                \includegraphics[width=\linewidth]{epsplt/5ang.eps}
+                \caption{}
+                \label{LFa}
+        \end{subfigure}%
+        \hspace{0.1cm}
+        \begin{subfigure}[b]{0.21\textwidth}
+              \includegraphics[width=\linewidth]{epsplt/5vel.eps}
+                \caption{}
+                \label{LFb}
+        \end{subfigure}
+        \caption{Lane following maneuver is shown here. The red vehicle represents ego vehicle and black vehicle represents Other vehicles. The green dotted lines show MPC planned path tracked by the TSCC shown in blue lines.}\label{LF}
+\end{figure}
+
+We also demonstrate the same scenario (Lane following) in Figures (\ref{LF5a}) and (\ref{LF5b}) but in a dense traffic scenario. Here also the speed of the vehicles on the same lane of the ego-vehicle is set to 5m/s and the velocity and $V^{pref}$ are set to 10m/s with same planning horizon of 50m. It shows the same behaviour of slowing down gradually and maintain the speed of the vehicles ahead of it.
+
+
+Lane following behavior is tested in another heavy traffic scenario to observe the behavior. Here the minimum scale applied by time scaling is 0.81 and the angular and linear velocities were scaled by an average scale of 0.92.A clear slowing down is observed in the behavior when there are multiple vehicles around ego vehicle when the  30m from the beginning. 
+
+
+
+\begin{figure}[H]
+        \begin{subfigure}[b]{0.21\textwidth}
+                \includegraphics[width=\linewidth]{figures/lf1.png}
+                \caption{}
+                \label{LF5a}
+        \end{subfigure}%
+        \hspace{0.1cm}
+        \begin{subfigure}[b]{0.21\textwidth}
+                \includegraphics[width=\linewidth]{figures/lf2.png}
+                \caption{}
+                \label{LF5b}
+        \end{subfigure}
+        \caption{Here the lane following behavior is tested for 5 obstacles and for a distance 90m}\label{LF5}
+\end{figure}
+\end{comment}
+
+%%%

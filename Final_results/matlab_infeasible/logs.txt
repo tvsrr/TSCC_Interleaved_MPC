@@ -1,0 +1,14 @@
+All changes made either in py code or in .m code will be updated here 
+-------------
+26.12.18-Switching implementation
+	-Doubt: when mpc is called from tscc, way points are re 		calculated, lets see if there is any adverse affect of 			this.	
+--------------
+27.12.18-Sending last location and heading of the obstacle and the vehicle 		 to pass to tscc.
+	 Heading of the obstacle is hard-coded needs to be changed
+--------------
+28.12.18- added the for loop from [32-44] to verify if the obstacle and 	  robot are in same line and made necessary adjustments to x1 and 		  y1 to facilitate looping 
+	- added if-else condition to verify x1==x0 to avoid index errors
+	  when the obstacle and car are not in the same line 	
+--------------
+
+ 

@@ -1,0 +1,18 @@
+Error(1):
+
+	>>Error using  \ 
+	Matrix dimensions must agree.
+	Error in boundary_making (line 34)
+	temp_sg_y = temp_a\temp_b_y;
+
+Solution:
+boundaries x and y co-ordinates size mismatch
+size(x_path_left) ~= size(y_path_left)
+-------------------------------------------------------------
+Error(2):
+
+	>>Conversion to double from cvx is not possible.
+
+Solution:
+
+
