@@ -7,3 +7,5 @@ timescalingex.py calls tscc
 launch_iros.m calls mpc 
 matlab engine on python3 is needed to run the code 
 input settings are done both in newswitch and get_input.m 
+
+## You can get the details of the paper [here](https://ieeexplore.ieee.org/abstract/document/8813823) . 
