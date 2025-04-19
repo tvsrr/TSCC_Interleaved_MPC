@@ -57,11 +57,7 @@ obavoid = ob;
 lt=zeros(50,3);
 rt=zeros(50,3);
  red=10;
-if ~isempty(n_w)
 cit= n_w(end)/red;
-else 
-    cit = 0;
-end
 x_i=x_ob;y_i=y_ob;
 vsend=[];wsend=[];
 y1=y0;x1=x0;thf=theta_in;
@@ -212,7 +208,7 @@ if(n_w(end)<n && n_w(end)~=0)
     w_guess(n+1:end)=[];
     v_guess(n+1:end)=[];
 end
-Waypoints(:,3)=Waypoints(:,3)-red;
+wp(:,3)=wp(:,3)-red;
 
 for tick = 1:size(x_ob,2)
 x_ob(tick)=xob(tick,red);
@@ -235,7 +231,7 @@ end
 % csvwrite('w_guess.csv',w_guess);
 posit = find(n_w<=0);
 n_w(posit)=[];
-Waypoints(posit,:)=[];
+wp(posit,:)=[];
 roadx=[roadx,x1(1:red)];
 roady=[roady,y1(1:red)];
 if size(obroadx,2)==0
